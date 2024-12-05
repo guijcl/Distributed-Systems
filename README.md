@@ -41,6 +41,7 @@ This system uses a binary search tree for storage and ZooKeeper for coordination
 ### Prerequisites
 
 - Protocol Buffers (protoc-c)
+- protobuf-c library
 - ZooKeeper
 - GCC or compatible compiler
 
