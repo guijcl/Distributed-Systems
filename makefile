@@ -5,7 +5,7 @@
 # Ricardo Banon - 42035
 
 PROTOC_DIR=/usr/local/
-SHELL:=/bin/bash 
+SHELL:=/bin/bash
 BIN = binary/
 OBJ= object/
 OBJECTOS = sdmessage.pb-c.o data.o entry.o tree.o message.o client_stub.o network_client.o client-lib.o tree_client.o tree_skel.o network_server.o tree_server.o server-lib.o
@@ -17,7 +17,7 @@ INCLUDE = include/
 LDFLAGS = ${PROTOC_DIR}lib/libprotobuf-c.a
 SRC = source/
 CC = gcc
-CPROTOCFLAGS = -Wall -g -ggdb -O2 -I ${PROTOC_DIR}include/ -c -v#gdb debugger -O0 -v -da -Q -I 
+CPROTOCFLAGS = -Wall -g -ggdb -O2 -I ${PROTOC_DIR}include/ -c -v#gdb debugger -O0 -v -da -Q -I
 CFLAGS = -Wall -g -pthread -O2 -I include/ -c -v#gdb debugger -O0 -v -da -Q -I
 run : sdmessage.pb-c.c $(OBJECTOS) $(EXES)
 
